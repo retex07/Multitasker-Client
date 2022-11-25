@@ -1,0 +1,174 @@
+{
+  "components": {
+    "sideBar": {
+      "logo": "MULTI-TASKER",
+      "main": "Моё",
+      "completedTask": "Назначено",
+      "calendar": "Календарь",
+      "profile": "Профиль",
+      "exit": "Выйти"
+  }},
+  "pages": {
+    "profile": {
+      "title": "Ваш профиль",
+      "avatar": "Аватар",
+      "name": "Имя",
+      "email": "Email",
+      "password": "Пароль",
+      "changeImage":"Изменить фото"
+    },
+    "login": {
+      "title": "multi-tasker",
+      "subtitle": "Добро пожаловать!",
+      "email": "Адрес электронной почты",
+      "password": "Пароль",
+      "forgotPassword": "Забыли пароль?",
+      "registration": "Зарегистрируйтесь",
+      "question": "Нет аккаунта?",
+      "comeIn": "Войти",
+      "statusError": "Неправильное имя пользователя или пароль"
+    },
+    "registration": {
+      "confirmPassword": "Повторите пароль",
+      "signUp":"Зарегистироваться",
+      "question": "Уже есть аккаунт?",
+      "signIn": "Войдите",
+      "statusPassword": "Пароли не совпадают",
+      "statusMail": "Аккаунт уже существует"
+    },
+    "resetPasswordMail": {
+      "subtitle": "Восстановление пароля",
+      "continue":"Продолжить",
+      "goBack": "Назад",
+      "instruction": "На указанный адрес электронной почты будет направлено письмо с кодом для изменения пароля.",
+      "statusError": "Пользователь не найден"
+    },
+    "resetPasswordCode": {
+      "subtitle": "Восстановление пароля",
+      "label": "Отправленный код",
+      "statusError": "неверный код"
+    },
+    "resetPassword": {
+      "statusError": "Пароли не совпадают"
+    },
+    "appoint": {
+      "title": "Назначенные задачи",
+      "urlProject": "Все проекты",
+      "veryUrgent": "Очень срочно",
+      "urgent": "Срочно",
+      "mayWait": "Может подождать",
+      "notUrgent": "Несрочно",
+      "createTask": "Создать задачу",
+      "showFinishTask": "Отображать выполненные задачи",
+      "showFinishTwoTask": "Отображать выполненные подзадачи",
+      "tasks": "задач",
+      "finished": "выполнено",
+      "task": {
+        "veryUrgently": "Очень высокий",
+        "urgently": "Высокий",
+        "mayWait": "Низкий",
+        "notUrgently": "Очень низкий",
+        "completed": "Выполнена",
+        "noCompleted": "Оказывается не выполнена",
+        "subTask": "Подзадача",
+        "subTasks": "Подзадачи",
+        "deadline": "Срок исполнения",
+        "description": "Описание",
+        "performer": "Исполнитель",
+        "author": "Автор",
+        "created": "Создано",
+        "updated": "Обновлено",
+        "showSubTasks": "Показать подзадачи",
+        "months": {
+          "january": "января",
+          "february": "февраля",
+          "march": "марта",
+          "april": "апреля",
+          "may": "мая",
+          "june": "июня",
+          "july": "июля",
+          "august": "августа",
+          "september": "сентября",
+          "october": "октября",
+          "november": "ноября",
+          "december": "декабря"
+        }
+      }
+    },
+    "calendar": {
+      "tasks": "Задачи",
+      "months": {
+        "january": "Январь",
+        "february": "Февраль",
+        "march": "Март",
+        "april": "Апрель",
+        "may": "Май",
+        "june": "Июнь",
+        "july": "Июль",
+        "august": "Август",
+        "september": "Сентябрь",
+        "october": "Октябрь",
+        "november": "Ноябрь",
+        "december": "Декабрь"
+      },
+      "monthsTwo": {
+        "january": "января",
+        "february": "февраля",
+        "march": "марта",
+        "april": "апреля",
+        "may": "мая",
+        "june": "июня",
+        "july": "июля",
+        "august": "августа",
+        "september": "сентября",
+        "october": "октября",
+        "november": "ноября",
+        "december": "декабря"
+      },
+      "days": {
+        "monday": "Понедельник",
+        "tuesday": "Вторник",
+        "wednesday": "Среда",
+        "thursday": "Четверг",
+        "friday": "Пятница",
+        "saturday": "Суббота",
+        "sunday": "Воскресенье"
+      },
+      "warningPole": "Заполните все поля!",
+      "category": "Категория деятельности",
+      "project": "Проект",
+      "taskName": "Название задачи",
+      "performer": "Исполнитель",
+      "deadline": "Срок исполнения",
+      "description": "Описание задачи",
+      "urgently": {
+        "title": "Важность задачи",
+        "veryUrgent": "Очень срочно",
+        "urgent": "Срочно",
+        "mayWait": "Может подождать",
+        "notUrgent": "Несрочно"
+      },
+      "cancel": "Отменить",
+      "create": "Создать",
+      "tasking": {
+        "taskOne": "задача",
+        "taskTwo": "задачи",
+        "taskThree": "задач"
+      }
+    }
+  },
+  "privacyText": {
+    "1": "При регистрации вы автоматически соглашаетесь с",
+    "2": "Политикой конфиденциальности",
+    "3": "и",
+    "4": "Правилами использования приложения",
+    "5": "."
+  },
+  "errors": {
+    "email": "Должен иметь вид __@__.__",
+    "emailRequired": "Поле обязательно к заполнению",
+    "minLength": "Минимум 8 символов",
+    "maxLength": "Максимум  16 символов",
+    "passwordRequired": "Поле обязательно к заполнению"
+  }
+}

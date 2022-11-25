@@ -1,0 +1,40 @@
+variables:
+  REMOTE_ADDRESS: $REMOTE_USER@$REMOTE_HOST
+  ENVIRONMENT: develop
+
+stages:
+  - build
+  - deploy
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      variables:
+        ENVIRONMENT: develop
+    - when: always
+
+stage_build:
+  stage: build
+  environment: $ENVIRONMENT
+  tags:
+    - web
+  script:
+    - npm install
+    - npm run build
+
+  artifacts:
+    name: $CI_PROJECT_NAME
+    expire_in: 1 week
+    paths:
+      - build/
+
+stage_deploy:
+  stage: deploy
+  environment: $ENVIRONMENT
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+      when: always  
+  tags:
+    - web
+  script:
+    - rsync -avh ./build/* $REMOTE_ADDRESS:$REMOTE_DIR --delete
